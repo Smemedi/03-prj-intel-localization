@@ -8,6 +8,27 @@
   box-sizing: border-box;
 }
 
+.skip-link {
+  background-color: #ffffff;
+  color: #17324d;
+  left: 0.5rem;
+  padding: 0.75rem 1rem;
+  position: absolute;
+  top: -4rem;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  top: 0.5rem;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid #ffbf47;
+  outline-offset: 3px;
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -348,5 +369,88 @@ body > p {
   section div p {
     font-size: 0.8rem;
     line-height: 1.5;
+  }
+}
+
+/* ===========================
+   BOOTSTRAP CONTENT REGION
+   =========================== */
+
+.support-section {
+  background-color: #eef6fa;
+  color: #17324d;
+}
+
+.support-section .lead,
+.support-card p,
+.newsletter-panel p {
+  color: #29445c;
+}
+
+.support-card {
+  background-color: #ffffff;
+  border: 1px solid #9bb8c9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(23, 50, 77, 0.1);
+}
+
+.support-card h3,
+.newsletter-panel h2 {
+  color: #17324d;
+}
+
+.heading-icon {
+  color: #005a9c;
+  margin-inline-end: 0.35rem;
+}
+
+.learn-more {
+  color: #005a9c;
+  display: inline-block;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2rem;
+}
+
+.learn-more:hover,
+.learn-more:focus-visible {
+  color: #17324d;
+}
+
+.newsletter-panel {
+  background-color: #d9edf7;
+  border: 1px solid #7aa9c2;
+  border-radius: 8px;
+}
+
+.newsletter-panel .form-control:focus {
+  border-color: #005a9c;
+  box-shadow: 0 0 0 0.25rem rgba(0, 90, 156, 0.25);
+}
+
+.site-footer {
+  background-color: #17324d;
+  color: #ffffff;
+}
+
+.site-footer a {
+  color: #ffffff;
+  margin-inline-start: 1rem;
+}
+
+.site-footer a:focus-visible,
+.site-footer a:hover {
+  color: #b8e6ff;
+}
+
+@media (max-width: 767.98px) {
+  .site-footer nav {
+    text-align: center;
+  }
+
+  .site-footer a {
+    display: inline-block;
+    margin: 0 0.5rem;
   }
 }
